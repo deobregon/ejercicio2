@@ -1,0 +1,8 @@
+La automatización de los diferentes casos de prueba se realizó mediante el uso de scenarios outline con la finalidad de proporcionar diferente data de prueba en la ejecución del escenario y ver su comportamiento. Además se agregaron tags para la ejecución de los scenarios de manera independiente
+
+- En el Exercise 2, el test falla en los casos de prueba negativos en donde el code response es 400 y corresponde a un usuario invalido, se utilizó el ingreso de data en blanco y caracteres especiales en el campo de username para simular un usuario invalido, sin embargo el codigo de respuesta arrojado es 405 (codigo no identificado) y error de "Illegal character in fragment" respectivamente.
+
+- En el Exercise 3, el test falla en el caso de prueba negativo debido a que se realiza el update de un usuario que no existe, dando como resultado un code response 200 cuando el codigo esperado corresponde a un 404 - User no found
+
+- Se realizaron pruebas con el ingreso de data en blanco en los campos diferentes a username, sin embargo los escenarios responden con codigo 200 que corresponde a exitoso, debido a que las validaciones se realizan unicamente mediante el username.
+
